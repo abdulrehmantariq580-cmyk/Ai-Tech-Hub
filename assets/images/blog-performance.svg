@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" fill="none" width="600" height="340">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E162B" />
+      <stop offset="100%" stop-color="#070A14" />
+    </linearGradient>
+    <linearGradient id="meterGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39D5FF" />
+      <stop offset="50%" stop-color="#00E699" />
+      <stop offset="100%" stop-color="#39D5FF" />
+    </linearGradient>
+    <filter id="glow5" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="340" fill="url(#bgGrad5)" />
+
+  
+  <g transform="translate(300, 180)">
+    
+    <path d="M-110 0 A 110 110 0 1 1 110 0" fill="none" stroke="#1A284A" stroke-width="14" stroke-linecap="round" />
+    
+    <path d="M-110 0 A 110 110 0 1 1 95 -55" fill="none" stroke="url(#meterGrad5)" stroke-width="14" stroke-linecap="round" filter="url(#glow5)" />
+    
+    
+    <text x="0" y="-15" fill="#FFFFFF" font-size="52" font-family="Inter, sans-serif" font-weight="900" text-anchor="middle">100</text>
+    <text x="0" y="15" fill="#00E699" font-size="13" font-family="sans-serif" font-weight="700" text-anchor="middle">PERFECT SCORE</text>
+  </g>
+
+  
+  
+  <g transform="translate(110, 240)">
+    <rect width="115" height="42" rx="8" fill="#141E36" stroke="#39D5FF" stroke-width="1.2" />
+    <text x="57" y="18" fill="#8E9BB5" font-size="10" font-family="sans-serif" font-weight="600" text-anchor="middle">INP LATENCY</text>
+    <text x="57" y="34" fill="#39D5FF" font-size="13" font-family="monospace" font-weight="700" text-anchor="middle">&lt; 38 ms</text>
+  </g>
+
+  
+  <g transform="translate(242, 240)">
+    <rect width="115" height="42" rx="8" fill="#141E36" stroke="#00E699" stroke-width="1.2" />
+    <text x="57" y="18" fill="#8E9BB5" font-size="10" font-family="sans-serif" font-weight="600" text-anchor="middle">LCP LOAD</text>
+    <text x="57" y="34" fill="#00E699" font-size="13" font-family="monospace" font-weight="700" text-anchor="middle">0.62 s</text>
+  </g>
+
+  
+  <g transform="translate(374, 240)">
+    <rect width="115" height="42" rx="8" fill="#141E36" stroke="#8B7CFF" stroke-width="1.2" />
+    <text x="57" y="18" fill="#8E9BB5" font-size="10" font-family="sans-serif" font-weight="600" text-anchor="middle">CLS SHIFT</text>
+    <text x="57" y="34" fill="#8B7CFF" font-size="13" font-family="monospace" font-weight="700" text-anchor="middle">0.000</text>
+  </g>
+
+  
+  <circle cx="160" cy="80" r="3" fill="#39D5FF" opacity="0.6" />
+  <circle cx="440" cy="70" r="3" fill="#00E699" opacity="0.6" />
+</svg>
